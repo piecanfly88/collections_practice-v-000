@@ -66,3 +66,19 @@ def sum_array(array)
   array.each {|integer| sum += integer}
   sum
 end
+
+
+
+def add_s(array)
+  s_added = []
+  array.each_with_index.collect do |element, index|
+    if index != 2
+      s_added << element + "s"
+    else
+      s_added << element
+    end
+  end
+  s_added  
+end
+
+
