@@ -10,6 +10,6 @@ def sort_array_char_count(array)
   array.sort {|a, b| a.length <=> b.length}
 end
 
-def reverse_array(array)
-  array.sort.rotate! {|a, b| a <=> b}
+def swap_elements(array)
+  array.sort {|a, b| a <=> b}
 end
