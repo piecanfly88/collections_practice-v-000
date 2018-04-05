@@ -47,3 +47,25 @@ def kesha_maker(array)
   end
   kesha
 end
+
+
+
+def find_a(array)
+  starts_with_a = []
+  array.collect do |element| 
+    if element[0] == "a"
+      starts_with_a << element
+    end  
+  end
+   starts_with_a
+end 
+
+
+
+
+
+
+
+
+
+
