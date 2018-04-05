@@ -23,5 +23,6 @@ def swap_elements(array)
 end
 
 def reverse_array(array)
-  array.collect.unshift
+  reversed = []
+  array.collect {|integer| reversed.unshift(integer)}
 end
