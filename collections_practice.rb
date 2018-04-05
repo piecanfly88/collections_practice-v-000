@@ -12,10 +12,6 @@ end
 
 def swap_elements(array)
   array.each_with_index do |element, i|
-    if i = 1
-      array[2] = element
-    elsif i = 2
-      array[1] = element
-    end
-  end    
+    array[1],array[2] = array[2],array[1]
+  end
 end
