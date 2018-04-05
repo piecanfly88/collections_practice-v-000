@@ -59,3 +59,11 @@ def find_a(array)
   end
    starts_with_a
 end
+
+
+def sum_array(array)
+  sum = 0
+  array.each {|integer| sum += integer}
+  sum
+end  
+
