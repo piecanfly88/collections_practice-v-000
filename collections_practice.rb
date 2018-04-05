@@ -37,13 +37,13 @@ end
 
 def kesha_maker(array)
   kesha = []
-  array.each do |element| 
+  array.each do |element|
     if element.length > 2
       element[2] = "$"
       kesha << element
     else
       kesha << element
     end
-  end  
-end  
- 
+  end
+  kesha
+end
