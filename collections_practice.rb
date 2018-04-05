@@ -11,5 +11,5 @@ def sort_array_char_count(array)
 end
 
 def swap_elements(array)
-  array.rotate!(-3).sort {|a, b| a <=> b}
+  array.rotate!.sort {|a, b| a <=> b}
 end
