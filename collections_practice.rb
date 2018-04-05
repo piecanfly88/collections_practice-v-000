@@ -11,5 +11,11 @@ def sort_array_char_count(array)
 end
 
 def swap_elements(array)
-  array.sort {|a, b| a.reverse <=> b.reverse}
+  array.each_with_index do |element, i|
+    if i = 1
+      array[2] = element
+    elsif i = 2
+      array[1] = element
+    end
+  end    
 end
