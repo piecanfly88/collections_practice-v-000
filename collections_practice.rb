@@ -72,11 +72,11 @@ end
 def add_s(array)
   s_added = []
   array.each_with_index.collect do |element, index|
-    if index != 2
+    if index != 1
       s_added << element + "s"
     else
       s_added << element
     end
   end
-  s_added  
+  s_added
 end
