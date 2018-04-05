@@ -52,20 +52,10 @@ end
 
 def find_a(array)
   starts_with_a = []
-  array.collect do |element| 
+  array.collect do |element|
     if element[0] == "a"
       starts_with_a << element
-    end  
+    end
   end
    starts_with_a
-end 
-
-
-
-
-
-
-
-
-
-
+end
