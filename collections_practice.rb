@@ -2,13 +2,19 @@ def sort_array_asc(array)
   array.sort {|a, b| a <=> b}
 end
 
+
+
 def sort_array_desc(array)
   array.sort.reverse {|a, b| a <=> b}
 end
 
+
+
 def sort_array_char_count(array)
   array.sort {|a, b| a.length <=> b.length}
 end
+
+
 
 def swap_elements(array)
   array.each_with_index.collect do |element, i|
@@ -22,6 +28,22 @@ def swap_elements(array)
   end
 end
 
+
+
 def reverse_array(array)
   array.reverse.collect {|integer| integer}
 end
+
+
+def kesha_maker(array)
+  kesha = []
+  array.each do |element| 
+    if element.length > 2
+      element[2] = "$"
+      kesha << element
+    else
+      kesha << element
+    end
+  end  
+end  
+ 
