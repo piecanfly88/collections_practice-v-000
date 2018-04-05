@@ -5,4 +5,3 @@ end
 def sort_array_desc(array)
   array.sort.reverse {|a, b| a <=> b}
 end
-
